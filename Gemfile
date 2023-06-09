@@ -81,3 +81,5 @@ gem "view_component", "~> 3.1"
 gem "devise", "~> 4.9"
 
 gem "stimulus_reflex", "= 3.5.0.pre8"
+
+gem "letter_opener", "~> 1.8"
