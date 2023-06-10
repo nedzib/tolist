@@ -1,0 +1,38 @@
+<!-- Navigation -->
+
+<nav class="fixed flex justify-center md:justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center z-10 left-0 bg-zinc-200">
+  <div class="flex items-center flex-col">
+    <%= image_tag 'logos/logo.png', class: "h-10", alt: "Logo" %>
+  </div>
+  <ul class="font-montserrat items-center md:flex">
+    <li class="mx-3 ">
+      <a class="growing-underline hidden" href="howitworks">
+        <%= I18n.t("landing.index.how_it_works") %>
+      </a>
+    </li>
+    <li class="growing-underline mx-3 hidden">
+      <a href="#features">
+        <%= I18n.t("landing.index.features") %>
+      </a>
+    </li>
+    <li class="growing-underline mx-3 hidden">
+      <a href="pricing">
+        <%= I18n.t("landing.index.pricing") %>
+      </a>
+    </li>
+  </ul>
+  <div class="font-montserrat hidden md:block">
+    <%= link_to new_user_session_path do%>
+      <button class="mr-6">
+        <%= I18n.t("landing.index.sign_in") %>
+      </button>
+    <% end %>
+
+    <%= link_to new_user_registration_path do%>
+      <button class="py-2 px-4 text-white bg-black rounded-3xl">
+        <%= I18n.t("landing.index.sign_up") %>
+      </button>
+    <% end %>
+
+  </div>
+</nav>

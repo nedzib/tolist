@@ -11,6 +11,10 @@ module Tolist
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
+    config.i18n.default_locale = 'es'
+    config.i18n.fallbacks = ['en']
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
